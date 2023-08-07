@@ -1,10 +1,10 @@
-## This can be your internal website page / project page
+## Optimizing a Trading Portfolio using Random Forest and Python
 
-**Project description:** Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+**Project description:** For this project the task was simple, create an algorithm to trade a single stock, JPM (JP Morgan Chase), and have it outperform the S&P 500 for the timeframe chosen. To make this as realistic as possible, we chose to train our algorithm on data from January 1st, 2008 to December 31st 2009. Using a Random Forest structure, our algorithm would learn how to maximize its trading using 3 Technical Indicators: Relative Strength Index (RSI), Stochastic Oscillator Index (SOI) and Momentum (MOM). Using these 3, our algorithm would seek to maximize its value using max positions of +1000, 0, or -1000 shares. Trades could be in any form, as long as final position was conforming to the preceding rule. Following the training, the portfolio would simulate performance agianst the market by using an "out-of-sample" period. This time period would be from January 1st, 2010 to December 31st 2011. 
 
-### 1. Suggest hypotheses about the causes of observed phenomena
+### 1. Framing the Problem
 
-Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
+Initially, this may seem like a straight forward task, but implementation becomes complicated quick. First, we must determine what data to use and how to execute trades. Thankfully, we were given a data file that contained all stocks on the S&P 500 from 2000 to 2012. Using this as our source of data, we then used the adjusted close price as the value of stock at any given time, t. Adjusted close is the preferred price to use for portfolio learning, as it takes into account all adjustments, such as stock split, dividends and other corporate actions that affect price. 
 
 ```javascript
 if (isAwesome){
