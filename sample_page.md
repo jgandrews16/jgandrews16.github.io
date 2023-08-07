@@ -20,10 +20,10 @@ hold strategy by using the technical indicators discussed above.
 For deriving a basic strategy on the indicators, we looked to the common consensus about RSI, SOI and momentum. Using a set ūŮ day window, and the given
 price bands, we developed a formula to indicate when we should enter a long or
 short position of the stock.
-
+'''
 𝑆𝑒𝑙𝑙 = 𝑅𝑆𝐼 > ͚͙65 & (𝑆𝑂𝐼 > ͙͛75 𝑜𝑟 𝑀𝑜𝑀 < 0 ͔)
-𝐵𝑢𝑦 = 𝑅𝑆𝐼 < ͖͔65 & (𝑆𝑂𝐼 < ͖͙75𝑜𝑟 𝑀𝑜𝑀 > ͔0)
-
+𝐵𝑢𝑦 = 𝑅𝑆𝐼 < ͖͔65 & (𝑆𝑂𝐼 < ͖͙75𝑜𝑟 𝑀𝑜𝑀 > ͔0 )
+'''
 Our general thought was that we should tune SOI and MoM together, so that our
 algorithm was not super sensitive to price changes. SOI can vary rapidly as we
 learned in our analysis during previous workings. Because of this, we tied it to Momentum
