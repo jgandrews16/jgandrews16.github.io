@@ -4,7 +4,7 @@
 
 ### Category Name 1 
 
-[Random Tree Learning Algorithm for Trading Portfolio](/sample_page)
+[Machine Learning for Trading Portfolio](/sample_page)
 <img src="images/dummy_thumbnail.jpg?raw=true"/>
 
 ---
